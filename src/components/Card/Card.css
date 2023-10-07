@@ -1,6 +1,18 @@
-.gallery_card{
-    height:100px;
-    width:50px;
-    background: #000;
+.card{
+    width: 340px;
+    height: 340px;
+    flex-shrink: 0;
 
+}
+.card img{
+    height:200px;
+    width: 300px;
+    position: absolute;
+}
+.card h3{
+    font-size: medium;
+    position: relative;
+    bottom: -50%;
+    flex-wrap: wrap;
+    width: 300px;
 }

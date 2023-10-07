@@ -1,0 +1,16 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+
+.footer>img {
+    color: white;
+    filter: bl;
+
+}
+footer>p{
+    color: white;
+}

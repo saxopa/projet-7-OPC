@@ -9,8 +9,10 @@ export default function Banner() {
 	const location = useLocation();
 	
 	useEffect(() => {
+		// eslint-disable-next-line
 		if(location.pathname === '/about'){
 			setAboutPage(true)
+
 		};
 		
 	}, [])

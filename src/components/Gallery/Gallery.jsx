@@ -1,10 +1,11 @@
 import dati from '../../data/datas.json'
+import './Gallery.css'
 import Card from '../Card/Card'
 
 const List = ({ data }) => {
     const listItems = dati.map((item) => (
-      <div key={item.id}>
-        <Card
+      <div className="gallery"  key={item.id}>
+        <Card 
           key={item.id}
           id={item.id}
           title={item.title}
@@ -14,11 +15,13 @@ const List = ({ data }) => {
     ));
   
     return (
-      <div>
+      <div className='gallery'>
         {listItems}
       </div>
     );
-  };
+  }
+  ;
+    
   
   export default List;
 
