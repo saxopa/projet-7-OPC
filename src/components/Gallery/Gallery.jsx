@@ -15,7 +15,7 @@ const List = ({ data }) => {
     ));
   
     return (
-      <div className='gallery'>
+      <div className='gallery-grid'>
         {listItems}
       </div>
     );

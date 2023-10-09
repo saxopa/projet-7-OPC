@@ -1,15 +1,14 @@
 .card{
-    width: 340px;
+    width: 45%;
     height: 340px;
-    flex-shrink: 0;
 
 }
 .card img{
     height:200px;
-    width: 300px;
+    width: 100%;
     position: absolute;
 }
-.card h3{
+.card>h3{
     font-size: medium;
     position: relative;
     bottom: -50%;

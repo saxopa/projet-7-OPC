@@ -19,3 +19,8 @@
     margin: 43px auto;
 }
     
+.banner .banner_about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
