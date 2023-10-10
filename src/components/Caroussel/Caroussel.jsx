@@ -1,10 +1,10 @@
-import './Caroussel.css'
-import chevronG from '../../styles/img/chevronD.png'
-import chevronD from '../../styles/img/chevronG.png'
+import './Caroussel.scss'
+import chevronG from '../../styles/img/chevronG.png'
+import chevronD from '../../styles/img/chevronD.png'
 import { useState } from 'react'
 
 export default function Slider({imageSlider}) {
-
+    // imageSlider est un tableau d'images
     const [currentIndex, setCurrentIndex] = useState(0)
 
     const nextSlide = () => {
@@ -26,16 +26,16 @@ export default function Slider({imageSlider}) {
             {imageSlider.length > 1 && 
                 <>
                     <img 
-                        className='carousel_arrow carousel_arrow_right' 
-                        src={chevronD} 
+                        className='carousel_arrow  carousel_arrow_left' 
+                        src={chevronG} 
                         alt="show next slider" 
-                        onClick={nextSlide}
+                        onClick={prevSlide}
                     />
                     <img 
-                        className='carousel_arrow carousel_arrow_left' 
-                        src={chevronG} 
+                        className='carousel_arrow carousel_arrow_right ' 
+                        src={chevronD} 
                         alt="show previous slider" 
-                        onClick={prevSlide}
+                        onClick={nextSlide}
                     />
                     <p className='slideCount'>{currentIndex + 1} / {imageSlider.length}</p>
                 </>

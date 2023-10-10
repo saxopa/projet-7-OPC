@@ -1,0 +1,17 @@
+.info-logement{
+    display: flex;
+    width:90%;
+    margin: 0 auto;
+    justify-content: space-between; 
+    
+
+}
+.host-img{
+    border-radius: 50px;
+    background-position:center;
+    background-size:cover;
+}
+.container-info-nom-photo{
+    display: flex;
+    align-items: center;
+}
