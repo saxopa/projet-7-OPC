@@ -1,14 +1,14 @@
-.gallery{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 33%;
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 33%;
 }
 
-.gallery-grid{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
+.gallery-grid {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
