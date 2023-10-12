@@ -1,5 +1,5 @@
 import dati from '../../data/datas.json'
-import './Gallery.css'
+import './Gallery.scss'
 import Card from '../Card/Card'
 
 const List = ({ data }) => {

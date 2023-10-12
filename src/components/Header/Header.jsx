@@ -10,7 +10,7 @@ export default function Header() {
       </NavLink>
 
       <nav>
-        <ul>
+        <ul className="liste-menu">
           <li>
             <NavLink to={"/"}>Accueil</NavLink>
           </li>

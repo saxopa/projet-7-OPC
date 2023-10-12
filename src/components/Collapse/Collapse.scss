@@ -1,10 +1,16 @@
 .collapse{
     display: flex;
     flex-direction: column;
+
 }
 
 .collapse_content{
     display: flex;
     flex-direction: column;
-    width:25%;
+    
+}
+
+.collapse_title{
+    background-color: #FF6060;
+    border: none;
 }
