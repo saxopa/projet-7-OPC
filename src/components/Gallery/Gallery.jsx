@@ -1,9 +1,9 @@
-import dati from '../../data/datas.json'
+import data from '../../data/datas.json'
 import './Gallery.scss'
 import Card from '../Card/Card'
 
-const List = ({ data }) => {
-    const listItems = dati.map((item) => (
+const List = () => {
+    const listItems = data.map((item) => (
       <div className="gallery"  key={item.id}>
         <Card 
           key={item.id}
