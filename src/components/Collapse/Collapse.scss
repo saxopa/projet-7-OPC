@@ -1,9 +1,3 @@
-.collapse{
-    display: flex;
-    flex-direction: column;
-
-}
-
 .collapse_content{
     display: flex;
     flex-direction: column;
@@ -11,6 +5,12 @@
 }
 
 .collapse_title{
-    background-color: #FF6060;
     border: none;
+}
+.collapse-container-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #FF6060;
 }

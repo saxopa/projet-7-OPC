@@ -4,14 +4,14 @@ import Card from '../Card/Card'
 
 const List = () => {
     const listItems = data.map((item) => (
-      <div className="gallery"  key={item.id}>
+
         <Card 
           key={item.id}
           id={item.id}
           title={item.title}
           cover={item.cover}
         />
-      </div>
+
     ));
   
     return (

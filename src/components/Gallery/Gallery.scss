@@ -1,17 +1,10 @@
-.gallery {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 33%;
-  @media screen {
-    
-  }
-}
-
 .gallery-grid {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 0 auto;
+  width: 90%;
+  background: #F6F6F6;
+ 
 }

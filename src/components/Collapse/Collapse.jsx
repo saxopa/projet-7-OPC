@@ -9,13 +9,13 @@ export default function Collapse({ title, children }) {
   const toggleCollapse = () => setIsCollapse(!isCollapse);
   return (
     <div className="collapse">
-      <div>
+      <div className="collapse-container-title">
         <h2 className="collapse_title">{title}</h2>
         <p onClick={toggleCollapse}>
           {isCollapse ? (
-            <i className="fa-solid fa-chevron-up"></i>
+            <i className="fa-solid fa-chevron-up">a</i>
           ) : (
-            <i className="fa-solid fa-chevron-down"></i>
+            <i className="fa-solid fa-chevron-down">2</i>
           )}
         </p>
       </div>
