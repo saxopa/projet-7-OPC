@@ -18,6 +18,8 @@
 .card img {
   height: 300px;
   width: 100%;
+  border-radius: 10px;
+
 }
 .card  h3 {
   position: absolute;
@@ -25,6 +27,7 @@
   left: 20px;
   right: 20px;
   font-weight: 500;
+  color: white;
   @media screen and (max-width: 1024px) {
     bottom: 5%;
     

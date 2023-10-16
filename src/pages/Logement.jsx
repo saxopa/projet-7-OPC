@@ -29,12 +29,12 @@ function Logement() {
       <main>
         <Caroussel imageSlider={imageSlider} />
         <div className="info-logement">
-          <div>
+          <div className="container-info-tag">
             <h1>{dataLogementActuel[0].title}</h1>
             <p>{dataLogementActuel[0].location}</p>
-            <div>
+            <div className="container-tag">
               {dataLogementActuel[0].tags.map((tag, index) => {
-                return <button key={index}>{tag}</button>;
+                return <button className="button-info-logement" key={index}>{tag}</button>;
               })}
             </div>
           </div>
@@ -58,8 +58,6 @@ function Logement() {
             </div>
           </div>
         </div>
-        <div>
-          <div></div>
           <div className="container_collapses">
             <Collapse
               title="Description"
@@ -75,7 +73,6 @@ function Logement() {
 			  </ul>}
             />
           </div>
-        </div>
       </main>
     </>
   );

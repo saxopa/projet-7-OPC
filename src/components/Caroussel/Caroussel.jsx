@@ -1,6 +1,6 @@
 import './Caroussel.scss'
-import chevronG from '../../styles/img/chevronG.png'
-import chevronD from '../../styles/img/chevronD.png'
+import chevronG from '../../assets/img/chevronG.png'
+import chevronD from '../../assets/img/chevronD.png'
 import { useState } from 'react'
 
 export default function Slider({imageSlider}) {

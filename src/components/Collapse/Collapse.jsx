@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import chevronDown from "../../assets/arrow_down.png";
+import chevronUp from "../../assets/arrow_up.svg";
 import "./Collapse.scss";
 
 export default function Collapse({ title, children }) {
@@ -13,9 +15,9 @@ export default function Collapse({ title, children }) {
         <h2 className="collapse_title">{title}</h2>
         <p onClick={toggleCollapse}>
           {isCollapse ? (
-            <i className="fa-solid fa-chevron-up">a</i>
+            <img src={chevronUp} />
           ) : (
-            <i className="fa-solid fa-chevron-down">2</i>
+            <img src={chevronDown} />
           )}
         </p>
       </div>
