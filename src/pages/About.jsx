@@ -9,7 +9,7 @@ export default function About() {
             <Banner />
 
             <div className="container_collapse_about">
-            <Collapse title="Description" children="Lorem ipsu" />
+            <Collapse title="Description" children="Lorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsu" />
             <Collapse title="Description" children="Lorem ipsu" />
             <Collapse title="Description" children="Lorem ipsu" />
             <Collapse title="Description" children="Lorem ipsu" />

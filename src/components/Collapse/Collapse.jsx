@@ -11,13 +11,13 @@ export default function Collapse({ title, children }) {
   const toggleCollapse = () => setIsCollapse(!isCollapse);
   return (
     <div className="collapse">
-      <div className="collapse-container-title">
+      <div className="collapse-container-title-collapse">
         <h2 className="collapse_title">{title}</h2>
         <p onClick={toggleCollapse}>
           {isCollapse ? (
-            <img src={chevronUp} />
+            <img src={chevronUp} alt="chevron up" />
           ) : (
-            <img src={chevronDown} />
+            <img src={chevronDown} alt="chevron down" />
           )}
         </p>
       </div>
