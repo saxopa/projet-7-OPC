@@ -34,14 +34,20 @@ function Logement() {
             <p>{dataLogementActuel[0].location}</p>
             <div className="container-tag">
               {dataLogementActuel[0].tags.map((tag, index) => {
-                return <button className="button-info-logement" key={index}>{tag}</button>;
+                return (
+                  <button className="button-info-logement" key={index}>
+                    {tag}
+                  </button>
+                );
               })}
             </div>
           </div>
-          <div>
+          <div className="container-star-name-img">
             <div className="container-info-nom-photo">
-              <div>
-                <span>{name[0] + name[1]} </span>
+              <div className="container-info-nom">
+                <span>{name[0]} </span>
+                <br />
+                <span> {name[1]} </span>
               </div>
               <img
                 src={dataLogementActuel[0].host.picture}
@@ -50,7 +56,7 @@ function Logement() {
               />
             </div>
 
-            <div>
+            <div className="container-logement-star">
               {[...Array(5)].map((star, index) => {
                 const ratingValue = index + 1;
                 return <img key={index} alt="star" />;
@@ -58,21 +64,23 @@ function Logement() {
             </div>
           </div>
         </div>
-          <div className="container_collapses">
-            <Collapse
-              title="Description"
-              children={dataLogementActuel[0].description}
-            />
+        <div className="container_collapses">
+          <Collapse
+            title="Description"
+            children={dataLogementActuel[0].description}
+          />
 
-            <Collapse
-              title="Equipements"
-              children={<ul>
-				{dataLogementActuel[0].equipments.map((equipment, index) => (
-				  <li key={index}>{equipment}</li>
-				))}
-			  </ul>}
-            />
-          </div>
+          <Collapse
+            title="Equipements"
+            children={
+              <ul>
+                {dataLogementActuel[0].equipments.map((equipment, index) => (
+                  <li key={index}>{equipment}</li>
+                ))}
+              </ul>
+            }
+          />
+        </div>
       </main>
     </>
   );

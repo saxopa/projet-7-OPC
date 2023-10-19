@@ -8,22 +8,28 @@
 .collapse_content{
     display: flex;
     flex-direction: column;
-    background-color: yellow;
+    margin-top: -1%;
+    z-index: 0;
     width: 90%;
+    padding-top:1%;
+    background: #F6F6F6;
+
 }
 .collapse-container-title-collapse{
+    z-index: 10;
     display: flex;
     width:90%;
     justify-content: space-between;
     align-items: center;
     background-color: #FF6060;
-    
-
+    border-radius:10px;
 }
     
 
 
 .collapse_title{
+    color: white;
+    margin-left: 2%;
     border: none;
 }
 
