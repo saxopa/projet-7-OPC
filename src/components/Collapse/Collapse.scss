@@ -8,11 +8,15 @@
 .collapse_content{
     display: flex;
     flex-direction: column;
-    margin-top: -1%;
     z-index: 0;
     width: 90%;
-    padding-top:1%;
+    padding: 5% 0;
+    
     background: #F6F6F6;
+     li{
+        margin-bottom: 3%;
+        margin-left:2%;
+    }
 
 }
 .collapse-container-title-collapse{

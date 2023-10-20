@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import Caroussel from "../components/Caroussel/Caroussel";
 import Collapse from "../components/Collapse/Collapse";
 import "./Logement.scss";
+import starActive from "../assets/star-active.svg";
+import starInactive from "../assets/star-inactive.svg";
 
 function Logement() {
   const [imageSlider, setImageSlider] = useState([]);
@@ -22,7 +24,7 @@ function Logement() {
   }, [idLogementPage]);
 
   const name = dataLogementActuel[0].host.name.split(" ");
-  console.log(dataLogementActuel);
+  let starCount = dataLogementActuel[0].rating;
 
   return (
     <>
@@ -57,10 +59,18 @@ function Logement() {
             </div>
 
             <div className="container-logement-star">
-              {[...Array(5)].map((star, index) => {
-                const ratingValue = index + 1;
-                return <img key={index} alt="star" />;
-              })}
+              {
+
+              }
+              {[...Array(starCount++)].map((i) => (
+                <img src={starActive} alt="starActive" key={i} />
+              ))}
+              {/* afficher le nombre de fois que contient 5 - starCount */
+              //Je met +1 car starCount commence à 0
+              }
+              {[...Array(5-starCount+1)].map((i) => (
+                <img src={starInactive} alt="starInactive" key={i} />
+              ))}
             </div>
           </div>
         </div>

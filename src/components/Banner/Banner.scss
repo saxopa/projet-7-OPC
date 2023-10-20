@@ -7,13 +7,13 @@
   background-position: center;
   background-size: cover;
   height: 220px;
-  padding: 20px;
-  max-width: 95%;
+  width: 90%;
+  border-radius: 25px;
   margin: 43px auto;
-  & > p {
+   p {
     color: white;
     font-size: 5rem;
-    font-weight: 600;
+    font-weight: 400;
     text-align: center;
     @media screen and (max-width: 1024px) {
       font-size: 3rem;

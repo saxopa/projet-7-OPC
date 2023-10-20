@@ -36,15 +36,18 @@
 .container-info-nom-photo {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .container-info-nom {
   padding-right: 4%;
+  span{
+    color: #FF6060;
+  }
 }
 .container-logement-star {
   margin-top: 10px;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .container-star-name-img  {
   margin: 30px 0;
