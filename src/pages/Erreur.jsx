@@ -7,7 +7,7 @@ export default function Erreur() {
       <div className="label">
         <h1 className="text-wrapper">404</h1>
       </div>
-      <h2>Oups! La page que vous demandez n'existe pas.</h2>
+      <h2 className="message-avertissement">Oups! La page que vous demandez n'existe pas.</h2>
       <NavLink to={"/"}>Retourner sur la page d'accueil</NavLink>
     </div>
   );
