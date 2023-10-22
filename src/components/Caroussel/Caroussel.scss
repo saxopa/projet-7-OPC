@@ -29,8 +29,11 @@
         bottom: 25px;
         left: 50%;
         transform: translateX(-50%);
-        color: #ff6060;
+        color: white;
         font-weight: 500;
+        @media screen and (max-width:768px) {
+            display: none;
+        }
 
     }
 }

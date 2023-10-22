@@ -23,9 +23,14 @@ a {
   display: flex;
   justify-content: flex-end;
 }
-.header li {
-  font-size: 24px;
-  padding-left: 10%;
+.header {
+  li {
+    padding-left: 10%;
+  }
+  a{
+    font-size:larger;
+    min-width: 24px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -35,13 +40,16 @@ a {
       width: 60%;
     }
     li {
+      a{
       
+        
+      }
     }
     img{
         width:145px;
     }
     a{
-   font-size: 1.3rem;
+      font-size: 15px;
     font-weight: 500;
 }
   }
