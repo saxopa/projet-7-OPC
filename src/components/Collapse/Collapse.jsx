@@ -22,7 +22,7 @@ export default function Collapse({ title, children }) {
         </p>
       </div>
 
-      {isCollapse && <div className="collapse_content">{children}</div>}
+      {isCollapse && <div className="collapse_content"><p>{children}</p></div>}
     </div>
   );
 }
