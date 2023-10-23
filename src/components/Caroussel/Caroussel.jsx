@@ -22,6 +22,7 @@ export default function Slider({imageSlider}) {
 
 
     return (
+        //j'ai choisi le style inline css pour pouvoir utiliser la propriété background-image
         <section style={{backgroundImage : `url(${imageSlider[currentIndex]})`}} className='carousel'>
             {imageSlider.length > 1 && 
                 <>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import chevronDown from "../../assets/arrow_down.png";
-import chevronUp from "../../assets/arrow_up.svg";
+import chevronDown from "../../assets/img/arrow_down.png";
+import chevronUp from "../../assets/img/arrow_up.svg";
 import "./Collapse.scss";
 
 export default function Collapse({ title, children }) {

@@ -5,8 +5,8 @@ import { useEffect, useState } from "react";
 import Caroussel from "../components/Caroussel/Caroussel";
 import Collapse from "../components/Collapse/Collapse";
 import "./Logement.scss";
-import starActive from "../assets/star-active.svg";
-import starInactive from "../assets/star-inactive.svg";
+import starActive from "../assets/img/star-active.svg";
+import starInactive from "../assets/img/star-inactive.svg";
 
 function Logement() {
   const [imageSlider, setImageSlider] = useState([]);
