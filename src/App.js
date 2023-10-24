@@ -10,13 +10,12 @@ import Erreur from './pages/Erreur';
 
 const router = createBrowserRouter([
   { 
-    path : '/',
     element : <RootLayout />,
     children : [
       { path : '/', element : <Home /> },
       { path : '/about', element : <About /> },
-      { path : '/logement/:id', element : <Logement /> },
-      { path : '/*', element : <Erreur /> },
+      { path : '/logement/:id', element : <Logement />, errorElement : <Erreur /> },
+      { path : "*", element : <Erreur /> },
 
     ]
   }

@@ -9,11 +9,13 @@ import starActive from "../assets/img/star-active.svg";
 import starInactive from "../assets/img/star-inactive.svg";
 
 function Logement() {
+  
   const [imageSlider, setImageSlider] = useState([]);
   //récupération de l'id du logement
   const idLogementPage = useParams("id").id;
+
   //récupération des données du logement
-  const dataLogementActuel = datas.filter((data) => data.id === idLogementPage);
+  const dataLogementActuel = datas.filter((data) => data.id === idLogementPage  );
   // useEffect permet de faire des appels à des API ou des traitements asynchrones
 
   useEffect(() => {
@@ -22,6 +24,8 @@ function Logement() {
     );
     setImageSlider(dataLogementActuel[0].pictures);
   }, [idLogementPage]);
+
+
 
   const name = dataLogementActuel[0].host.name.split(" ");
   let starCount = dataLogementActuel[0].rating;
