@@ -1,6 +1,7 @@
 import Banner from "../components/Banner/Banner";
-import Collapse from "../components/Collapse/Collapse";
 import "./About.scss";
+
+import Collapse from "../components/Collapse/Collapse";
 
 export default function About() {
   // contenu qui sera affiché dans les Collapse
