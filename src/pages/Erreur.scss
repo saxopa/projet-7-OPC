@@ -9,26 +9,28 @@
     font-size: 36px;
     font-style: normal;
     font-weight: 500;
-    line-height: 142.6%; /* 51.336px */
+    margin-top: 4%;
     @media screen and (max-width: 768px) {
       font-size: 24px;
       text-align: center;
-  
-      
+      width: 60%;
     }
-    a{
+  }
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 10%;
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+      text-align: center;
       color: #ff6060;
-      text-decoration: none;
-      font-size: 36px;
+      font-family: Montserrat;
+      font-size: 14px;
       font-style: normal;
       font-weight: 500;
-      line-height: 142.6%; /* 51.336px */
-      @media screen and (max-width: 768px) {
-        font-size: 24px;
-        text-align: center;
-    
-        
-      }
+      text-decoration: underline;
     }
   }
 }

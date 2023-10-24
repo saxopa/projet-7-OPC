@@ -5,8 +5,12 @@ export default function Card({id, title, cover}) {
 
 	return (
 		<Link to={`/Logement/${id}`} className="card">
-			<img src={cover} alt={title} />
-			<h3>{title}</h3>	
+			<figure>
+				<img src={cover} alt="" />
+				<figcaption>
+					<h3>{title}</h3>
+				</figcaption>
+			</figure>
 		</Link>
 	)
 }

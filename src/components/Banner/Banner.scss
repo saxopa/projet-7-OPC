@@ -12,7 +12,7 @@
   margin: 43px auto;
    p {
     color: white;
-    font-size: 5rem;
+    font-size: 3.7rem;
     font-weight: 400;
     text-align: center;
     @media screen and (max-width: 1024px) {
@@ -31,8 +31,10 @@
   background-size: cover;
   height: 220px;
   padding: 20px;
-  max-width: 95%;
+  max-width: 90%;
   margin: 43px auto;
+  border-radius: 25px;
+
 }
 
 .banner .banner_about {

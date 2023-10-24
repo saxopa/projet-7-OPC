@@ -1,6 +1,7 @@
 .gallery-grid {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -8,4 +9,7 @@
   width: 90%;
   background: #F6F6F6;
   border-radius: 10px;
+  @media screen and (max-width: 768px) {
+    background: none;
+  }
 }
