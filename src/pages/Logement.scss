@@ -63,17 +63,18 @@
     flex-direction: column;
     align-items: center;
   }
-}
-.collapse {
-  width: 45%;
-  @media screen and (max-width: 768px) {
-    width: 100%;
+  .collapse {
+    width: 45%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+    .collapse_content{
+      height: 20vh;
+  
+    }
   }
-  .collapse_content{
-    height: 20vh;
+}
 
-  }
-}
 .button-info-logement {
   display: flex;
   align-items: center;
