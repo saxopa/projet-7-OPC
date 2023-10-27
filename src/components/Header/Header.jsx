@@ -5,14 +5,14 @@ import "./Header.scss";
 export default function Header() {
   return (
     <div className="header">
-      <NavLink to={"/"}>
+      <NavLink to={"/projet-7-OPC/"}>
         <img src={logo} alt="" />
       </NavLink>
 
       <nav>
         <ul className="liste-menu">
           <li>
-            <NavLink to={"/"}>Accueil</NavLink>
+            <NavLink to={"/projet-7-OPC/"}>Accueil</NavLink>
           </li>
           <li>
             {" "}
