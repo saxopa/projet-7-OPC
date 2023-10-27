@@ -12,7 +12,7 @@ const router = createBrowserRouter([
   { 
     element : <RootLayout />,
     children : [
-      { path : '/', element : <Home /> },
+      { path : '/projet-7-OPC/', element : <Home /> },
       { path : '/about', element : <About /> },
       { path : '/logement/:id', element : <Logement />, errorElement : <Erreur /> },
       { path : "*", element : <Erreur /> },
