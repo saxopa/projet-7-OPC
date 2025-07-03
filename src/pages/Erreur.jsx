@@ -8,7 +8,7 @@ export default function Erreur() {
         <h1 className="text-wrapper">404</h1>
       </div>
       <h2 className="message-avertissement">Oups! La page que vous demandez n'existe pas.</h2>
-      <NavLink to={"/projet-7-OPC/"}>Retourner sur la page d'accueil</NavLink>
+      <NavLink to={"."}>Retourner sur la page d'accueil</NavLink>
     </div>
   );
 }
