@@ -1,6 +1,39 @@
-Projet 7 Openclassrooms
+# Projet Kasa - Agence Immobilière
 
-Utilisation de React pour un projet d'agence immobilière
+Ce projet est une application web pour une agence immobilière, développée avec React et Vite.
 
-CRA 
-React Router
+## Fonctionnalités
+
+*   **Galerie de logements :** Affiche tous les biens immobiliers disponibles.
+*   **Page de détail :** Montre les informations détaillées de chaque logement.
+*   **Page "À Propos" :** Présente les valeurs de l'entreprise.
+*   **Page d'erreur 404 :** Gère les URL invalides.
+
+## Technologies
+
+*   **React**
+*   **Vite**
+*   **React Router**
+*   **SASS**
+
+## Démarrage
+
+1.  **Installer les dépendances :**
+    ```bash
+    npm install
+    ```
+
+2.  **Lancer le serveur de développement :**
+    ```bash
+    npm start
+    ```
+
+3.  **Compiler pour la production :**
+    ```bash
+    npm run build
+    ```
+
+4.  **Déployer sur GitHub Pages :**
+    ```bash
+    npm run deploy
+    ```
