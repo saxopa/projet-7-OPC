@@ -18,6 +18,7 @@ export default function About() {
       <Banner />
 
       <div className="container_collapse_about">
+
         <Collapse title="Fiabilité" children={fiabilite} />
         <Collapse title="Respect" children={respect} />
         <Collapse title="Service" children={service} />
