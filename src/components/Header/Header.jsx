@@ -11,12 +11,12 @@ export default function Header() {
 
       <nav>
         <ul className="liste-menu">
-          <li>
+          <li className="texte-menu">
             <NavLink to={"."}>Accueil</NavLink>
           </li>
-          <li>
+          <li className="texte-menu">
             {" "}
-            <NavLink to={".about"}>À Propos</NavLink>
+            <NavLink to={"about"}>À Propos</NavLink>
           </li>
         </ul>
       </nav>

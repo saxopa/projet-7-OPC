@@ -25,10 +25,11 @@ function Logement() {
     setImageSlider(dataLogementActuel[0].pictures);
   }, [idLogementPage]);
 
-
-
+ 
+      
   const name = dataLogementActuel[0].host.name.split(" ");
-  let starCount = dataLogementActuel[0].rating;
+  //le 10 sert à convertir la chaîne de caractères en nombre entier
+  const rating = parseInt(dataLogementActuel[0].rating);
 
   return (
     <>
@@ -63,17 +64,15 @@ function Logement() {
             </div>
 
             <div className="container-logement-star">
-              {
-
-              }
-              {[...Array(starCount++)].map((i) => (
-                <img src={starActive} alt="starActive" key={i} />
+              {[...Array(rating)].map((_, index) => (
+                <img src={starActive} alt="star active" key={`star-active-${index}`} />
               ))}
-              {/* afficher le nombre de fois que contient 5 - starCount */
-              //Je met +1 car starCount commence à 0
-              }
-              {[...Array(5-starCount+1)].map((i) => (
-                <img src={starInactive} alt="starInactive" key={i} />
+              {[...Array(5 - rating)].map((_, index) => (
+                <img
+                  src={starInactive}
+                  alt="star inactive"
+                  key={`star-inactive-${index}`}
+                />
               ))}
             </div>
           </div>

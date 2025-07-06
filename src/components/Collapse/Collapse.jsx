@@ -14,15 +14,16 @@ export default function Collapse({ title, children }) {
       <div className="collapse-container-title-collapse">
         <h2 className="collapse_title">{title}</h2>
         <p onClick={toggleCollapse}>
+          
           {isCollapse ? (
-            <img src={chevronUp} alt="chevron up" />
+            <img src={chevronDown} alt="chevron up" />
           ) : (
-            <img src={chevronDown} alt="chevron down" />
+            <img src={chevronUp} alt="chevron down" />
           )}
         </p>
       </div>
 
-      {isCollapse && <div className="collapse_content"><p>{children}</p></div>}
+      {isCollapse && <div className="collapse_content"><div>{children}</div></div>}
     </div>
   );
 }
