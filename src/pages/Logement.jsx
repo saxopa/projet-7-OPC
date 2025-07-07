@@ -7,29 +7,32 @@ import Collapse from "../components/Collapse/Collapse";
 import "./Logement.scss";
 import starActive from "../assets/img/star-active.svg";
 import starInactive from "../assets/img/star-inactive.svg";
-
+import Erreur from "../pages/Erreur";
 function Logement() {
-  
   const [imageSlider, setImageSlider] = useState([]);
-  //récupération de l'id du logement
   const idLogementPage = useParams("id").id;
+  const dataLogementActuel = datas.filter((data) => data.id === idLogementPage);
 
-  //récupération des données du logement
-  const dataLogementActuel = datas.filter((data) => data.id === idLogementPage  );
-  // useEffect permet de faire des appels à des API ou des traitements asynchrones
+  // Gestion spécialisée d'un mauvais id : on ne tente pas d'accéder aux données si elles n'existent pas
+  if (dataLogementActuel.length === 0) {
+        console.error("Erreur : logement introuvable pour l'id :", idLogementPage);
+
+    return <Erreur/> ;
+  }
 
   useEffect(() => {
     const dataLogementActuel = datas.filter(
       (data) => data.id === idLogementPage
     );
-    setImageSlider(dataLogementActuel[0].pictures);
+    if (dataLogementActuel.length > 0) {
+      setImageSlider(dataLogementActuel[0].pictures);
+    } else {
+      setImageSlider([]);
+    }
   }, [idLogementPage]);
 
- 
-      
   const name = dataLogementActuel[0].host.name.split(" ");
-  //le 10 sert à convertir la chaîne de caractères en nombre entier
-  const rating = parseInt(dataLogementActuel[0].rating);
+  const rating = parseInt(dataLogementActuel[0].rating, 10);
 
   return (
     <>
