@@ -17,7 +17,12 @@ const router = createBrowserRouter([
 
     ]
   }
-], { basename: "/projet-7-OPC/" })
+], { 
+  basename: "/projet-7-OPC/",
+  future: {
+    v7_startTransition: true,
+  },
+})
 
 
 
